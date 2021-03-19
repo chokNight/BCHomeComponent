@@ -33,6 +33,11 @@
             "~>4.2.0"
           ]
         }
+      },
+      "dependencies": {
+        "BCHomeComponent/Classes/Util": [
+
+        ]
       }
     },
     {
@@ -44,6 +49,11 @@
             "~>46"
           ]
         }
+      },
+      "dependencies": {
+        "BCHomeComponent/Classes/UI": [
+
+        ]
       }
     },
     {

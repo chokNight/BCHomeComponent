@@ -30,19 +30,23 @@ Section part entrance of beicai industry report and live show etc.
     'BCHomeComponent' => ['BCHomeComponent/Assets/Resource/*.xcassets']
   }
   
+  s.subspec 'Util' do |ss|
+    ss.source_files = 'BCHomeComponent/Classes/Util/*.swift'
+  end
+  
   s.subspec 'UI' do |ss|
     ss.source_files = 'BCHomeComponent/Classes/UI/*.swift'
     ss.ios.dependency 'SnapKit', '~>4.2.0'
+    ss.dependency 'BCHomeComponent/Util'
   end
  
   s.subspec 'TargetExtension' do |ss|
     ss.source_files = 'BCHomeComponent/Classes/TargetExtension/*.swift'
     ss.ios.dependency 'CTMediator', '~>46'
+    ss.dependency 'BCHomeComponent/UI'
   end
   
-  s.subspec 'Util' do |ss|
-    ss.source_files = 'BCHomeComponent/Classes/Util/*.swift'
-  end
+  
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
 end
