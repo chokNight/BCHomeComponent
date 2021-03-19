@@ -1,0 +1,6 @@
+framework module BCHomeComponent {
+  umbrella header "BCHomeComponent-umbrella.h"
+
+  export *
+  module * { export * }
+}

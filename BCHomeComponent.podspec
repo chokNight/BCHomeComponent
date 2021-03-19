@@ -9,34 +9,42 @@
 Pod::Spec.new do |s|
   s.name             = 'BCHomeComponent'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of BCHomeComponent.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'A component of Home part of Beicai architecture.'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Section part entrance of beicai industry report and live show etc.
                        DESC
 
-  s.homepage         = 'https://github.com/bubuatt@sina.com/BCHomeComponent'
+  s.homepage         = 'https://github.com/chokNight/BCHomeComponent'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'bubuatt@sina.com' => 'zj4qwgtncd@privaterelay.appleid.com' }
-  s.source           = { :git => 'https://github.com/bubuatt@sina.com/BCHomeComponent.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/chokNight/BCHomeComponent.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'BCHomeComponent/Classes/**/*'
+#  s.source_files = 'BCHomeComponent/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'BCHomeComponent' => ['BCHomeComponent/Assets/*.png']
-  # }
-
+  s.resource_bundles = {
+    'BCHomeComponent' => ['BCHomeComponent/Assets/Resource/*.xcassets']
+  }
+  
+  s.subspec 'UI' do |ss|
+    ss.source_files = 'BCHomeComponent/Classes/UI/*.swift'
+    ss.ios.dependency 'SnapKit', '~>4.2.0'
+  end
+ 
+  s.subspec 'TargetExtension' do |ss|
+    ss.source_files = 'BCHomeComponent/Classes/TargetExtension/*.swift'
+    ss.ios.dependency 'CTMediator', '~>46'
+  end
+  
+  s.subspec 'Util' do |ss|
+    ss.source_files = 'BCHomeComponent/Classes/Util/*.swift'
+  end
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
+
+

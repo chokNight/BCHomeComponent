@@ -1,0 +1,6 @@
+framework module Pods_BCHomeComponent_Example {
+  umbrella header "Pods-BCHomeComponent_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

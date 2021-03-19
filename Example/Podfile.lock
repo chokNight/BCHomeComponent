@@ -1,0 +1,35 @@
+PODS:
+  - BCHomeComponent (0.1.0):
+    - BCHomeComponent/TargetExtension (= 0.1.0)
+    - BCHomeComponent/UI (= 0.1.0)
+    - BCHomeComponent/Util (= 0.1.0)
+  - BCHomeComponent/TargetExtension (0.1.0):
+    - CTMediator (~> 46)
+  - BCHomeComponent/UI (0.1.0):
+    - SnapKit (~> 4.2.0)
+  - BCHomeComponent/Util (0.1.0)
+  - CTMediator (46)
+  - SnapKit (4.2.0)
+
+DEPENDENCIES:
+  - BCHomeComponent (from `../`)
+  - CTMediator
+  - SnapKit
+
+SPEC REPOS:
+  trunk:
+    - CTMediator
+    - SnapKit
+
+EXTERNAL SOURCES:
+  BCHomeComponent:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BCHomeComponent: 0fac9b4b918622872f5630bc3b126e003fc3d9ee
+  CTMediator: f1cf58d509fb3192086c367711f039efd769b907
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+
+PODFILE CHECKSUM: 2693d4701fda89dc316bcd41df04f21adfd2bd1b
+
+COCOAPODS: 1.10.1

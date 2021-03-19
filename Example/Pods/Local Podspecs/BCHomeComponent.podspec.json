@@ -1,0 +1,54 @@
+{
+  "name": "BCHomeComponent",
+  "version": "0.1.0",
+  "summary": "A component of Home part of Beicai architecture.",
+  "description": "Section part entrance of beicai industry report and live show etc.",
+  "homepage": "https://github.com/chokNight/BCHomeComponent",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "bubuatt@sina.com": "zj4qwgtncd@privaterelay.appleid.com"
+  },
+  "source": {
+    "git": "https://github.com/chokNight/BCHomeComponent.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "resource_bundles": {
+    "BCHomeComponent": [
+      "BCHomeComponent/Assets/Resource/*.xcassets"
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "UI",
+      "source_files": "BCHomeComponent/Classes/UI/*.swift",
+      "ios": {
+        "dependencies": {
+          "SnapKit": [
+            "~>4.2.0"
+          ]
+        }
+      }
+    },
+    {
+      "name": "TargetExtension",
+      "source_files": "BCHomeComponent/Classes/TargetExtension/*.swift",
+      "ios": {
+        "dependencies": {
+          "CTMediator": [
+            "~>46"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Util",
+      "source_files": "BCHomeComponent/Classes/Util/*.swift"
+    }
+  ]
+}
