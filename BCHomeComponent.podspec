@@ -30,8 +30,8 @@ Section part entrance of beicai industry report and live show etc.
     'BCHomeComponent' => ['BCHomeComponent/Assets/Resource/*.xcassets']
   }
   
-  s.subspec 'Util' do |ss|
-    ss.source_files = 'BCHomeComponent/Classes/Util/*.swift'
+  s.subspec 'Util' do |util|
+    util.source_files = 'BCHomeComponent/Classes/Util/*.swift'
   end
   
   s.subspec 'UI' do |ss|
